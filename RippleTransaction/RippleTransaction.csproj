@@ -74,6 +74,7 @@
     <Content Include="AccountChannel.aspx" />
     <Content Include="ChannelAuthorize.aspx" />
     <Content Include="ChannelVerify.aspx" />
+    <Content Include="PaymentChannelClaim.aspx" />
     <Content Include="SubmitMethod.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -98,6 +99,13 @@
     </Compile>
     <Compile Include="ChannelVerify.aspx.designer.cs">
       <DependentUpon>ChannelVerify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentChannelClaim.aspx.cs">
+      <DependentUpon>PaymentChannelClaim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaymentChannelClaim.aspx.designer.cs">
+      <DependentUpon>PaymentChannelClaim.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SubmitMethod.aspx.cs">
