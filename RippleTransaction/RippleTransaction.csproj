@@ -45,6 +45,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -68,10 +71,42 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AccountChannel.aspx" />
+    <Content Include="ChannelAuthorize.aspx" />
+    <Content Include="ChannelVerify.aspx" />
+    <Content Include="SubmitMethod.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccountChannel.aspx.cs">
+      <DependentUpon>AccountChannel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AccountChannel.aspx.designer.cs">
+      <DependentUpon>AccountChannel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChannelAuthorize.aspx.cs">
+      <DependentUpon>ChannelAuthorize.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChannelAuthorize.aspx.designer.cs">
+      <DependentUpon>ChannelAuthorize.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChannelVerify.aspx.cs">
+      <DependentUpon>ChannelVerify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChannelVerify.aspx.designer.cs">
+      <DependentUpon>ChannelVerify.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SubmitMethod.aspx.cs">
+      <DependentUpon>SubmitMethod.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SubmitMethod.aspx.designer.cs">
+      <DependentUpon>SubmitMethod.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
