@@ -74,6 +74,7 @@
     <Content Include="AccountChannel.aspx" />
     <Content Include="ChannelAuthorize.aspx" />
     <Content Include="ChannelVerify.aspx" />
+    <Content Include="ClosingExpiredChannel.aspx" />
     <Content Include="PaymentChannelClaim.aspx" />
     <Content Include="SubmitMethod.aspx" />
     <Content Include="Web.config" />
@@ -99,6 +100,13 @@
     </Compile>
     <Compile Include="ChannelVerify.aspx.designer.cs">
       <DependentUpon>ChannelVerify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClosingExpiredChannel.aspx.cs">
+      <DependentUpon>ClosingExpiredChannel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClosingExpiredChannel.aspx.designer.cs">
+      <DependentUpon>ClosingExpiredChannel.aspx</DependentUpon>
     </Compile>
     <Compile Include="PaymentChannelClaim.aspx.cs">
       <DependentUpon>PaymentChannelClaim.aspx</DependentUpon>
