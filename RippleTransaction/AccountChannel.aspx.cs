@@ -16,8 +16,8 @@ namespace RippleTransaction
     {
         public JObject InvokeMethod(string a_sMethod)
         {
-            // HttpWebRequest webRequest = (HttpWebRequest)WebRequest.Create("https://s.altnet.rippletest.net:51234");
-            HttpWebRequest webRequest = (HttpWebRequest)WebRequest.Create("http://s1.ripple.com:51234/");
+             HttpWebRequest webRequest = (HttpWebRequest)WebRequest.Create("https://s.altnet.rippletest.net:51234");
+         //   HttpWebRequest webRequest = (HttpWebRequest)WebRequest.Create("http://s1.ripple.com:51234/");
 
             webRequest.ContentType = "application/json";
             webRequest.Method = "POST";
@@ -28,8 +28,8 @@ namespace RippleTransaction
 
              'method': 'account_channels',
         'params': [{
-        'account': 'rfginNsDt73fZtzp858dT6Y6U67Y1QB7GV',
-        'destination_account': 'rPspuKM5rCw5EkRDD9vGL816V15DwtSa3L',
+        'account': 'r4WFehZPVWKWB1iCzjT9WM4TUJScbaaWzw',
+        'destination_account': 'rsXE1kdkUuUmuoTBkJf5zcxYKyKrEs5JGD',
         'ledger_index': 'validated'
     }]
 

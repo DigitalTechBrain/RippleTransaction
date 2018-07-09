@@ -17,8 +17,8 @@ namespace RippleTransaction
     {
         public JObject InvokeMethod()
         {
-            // HttpWebRequest webRequest = (HttpWebRequest)WebRequest.Create("https://s.altnet.rippletest.net:51234");
-            HttpWebRequest webRequest = (HttpWebRequest)WebRequest.Create("http://s1.ripple.com:51234/");
+             HttpWebRequest webRequest = (HttpWebRequest)WebRequest.Create("https://s.altnet.rippletest.net:51234");
+           // HttpWebRequest webRequest = (HttpWebRequest)WebRequest.Create("http://s1.ripple.com:51234/");
 
             webRequest.ContentType = "application/json";
             webRequest.Method = "POST";
@@ -27,17 +27,17 @@ namespace RippleTransaction
             string json = @"
             {
 
-              'method': 'submit',
+             'method': 'submit',
     'params': [{
-            'secret': '',
+            'secret': 'shB1oW8M7RMjdhFz7AN2oLBvGGAnP',
             'tx_json': {
-                'Account': 'rf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn',
+                'Account': 'r4WFehZPVWKWB1iCzjT9WM4TUJScbaaWzw',
                 'TransactionType': 'PaymentChannelClaim',
-                'Amount': '1000000',
-                'Balance': '1000000',
-                'Channel': '5DB01B7FFED6B67E6B0414DED11E051D2EE2B7619CE0EAA6286D67A3A4D5BDB3',
-                'PublicKey': '023693F15967AE357D0327974AD46FE3C127113B1110D6044FD41E723689F81CC6',
-                'Signature': '304402204EF0AFB78AC23ED1C472E74F4299C0C21F1B21D07EFC0A3838A420F76D783A400220154FB11B6F54320666E4C36CA7F686C16A3A0456800BBC43746F34AF50290064'
+                'Amount': '10000000',
+                'Balance': '0',
+                'Channel': '351C0E602430D6E8499017C10338EE9ED998D2F26B49D422F305AA060747C1C9',
+                'PublicKey': 'aB44YfzW24VDEJQ2UuLPV2PvqcPCSoLnL7y5M1EzhdW4LnK5xMS3',
+                'Signature': '30450221008BFA28FBCA4B7D93E185277763AD0ED9659F2EE8820F5EFF330EE8BB0B07489F0220276FD5599780055C89C890234219513725EE3FA79DACCCD9C3AA6FCC97D30FD4'
             },
             'fee_mult_max': 1000
         }]

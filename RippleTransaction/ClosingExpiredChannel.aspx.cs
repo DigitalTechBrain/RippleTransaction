@@ -1,8 +1,6 @@
 ﻿using System;
-using System;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -18,8 +16,8 @@ namespace RippleTransaction
     {
         public JObject InvokeMethod()
         {
-            // HttpWebRequest webRequest = (HttpWebRequest)WebRequest.Create("https://s.altnet.rippletest.net:51234");
-            HttpWebRequest webRequest = (HttpWebRequest)WebRequest.Create("http://s1.ripple.com:51234/");
+             HttpWebRequest webRequest = (HttpWebRequest)WebRequest.Create("https://s.altnet.rippletest.net:51234");
+           // HttpWebRequest webRequest = (HttpWebRequest)WebRequest.Create("http://s1.ripple.com:51234/");
 
             webRequest.ContentType = "application/json";
             webRequest.Method = "POST";
@@ -28,13 +26,13 @@ namespace RippleTransaction
             string json = @"
             {
 
-              'method': 'submit',
+               'method': 'submit',
     'params': [{
-        'secret'',
+        'secret': 'shB1oW8M7RMjdhFz7AN2oLBvGGAnP',
         'tx_json': {
-            'Account': 'rN7n7otQDd6FczFgLdSqtcsAUxDkw6fzRH',
+            'Account': 'r4WFehZPVWKWB1iCzjT9WM4TUJScbaaWzw',
             'TransactionType': 'PaymentChannelClaim',
-            'Channel': '5DB01B7FFED6B67E6B0414DED11E051D2EE2B7619CE0EAA6286D67A3A4D5BDB3',
+            'Channel': '351C0E602430D6E8499017C10338EE9ED998D2F26B49D422F305AA060747C1C9',
             'Flags': 2147614720
         },
         'fee_mult_max': 1000

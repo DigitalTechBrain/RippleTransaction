@@ -16,8 +16,8 @@ namespace RippleTransaction
     {
         public JObject InvokeMethod()
         {
-            // HttpWebRequest webRequest = (HttpWebRequest)WebRequest.Create("https://s.altnet.rippletest.net:51234");
-            HttpWebRequest webRequest = (HttpWebRequest)WebRequest.Create("http://s1.ripple.com:51234/");
+             HttpWebRequest webRequest = (HttpWebRequest)WebRequest.Create("https://s.altnet.rippletest.net:51234");
+           // HttpWebRequest webRequest = (HttpWebRequest)WebRequest.Create("http://s1.ripple.com:51234/");
 
             webRequest.ContentType = "application/json";
             webRequest.Method = "POST";
@@ -28,12 +28,12 @@ namespace RippleTransaction
 
               'method': 'submit',
     'params': [{
-        'secret': '',
+        'secret': 'shB1oW8M7RMjdhFz7AN2oLBvGGAnP',
         'tx_json': {
-            'Account': 'rN7n7otQDd6FczFgLdSqtcsAUxDkw6fzRH',
+            'Account': 'r4WFehZPVWKWB1iCzjT9WM4TUJScbaaWzw',
             'TransactionType': 'PaymentChannelCreate',
-            'Amount': '100000000',
-            'Destination': 'rf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn',
+            'Amount': '10000000',
+            'Destination': 'rsXE1kdkUuUmuoTBkJf5zcxYKyKrEs5JGD',
             'SettleDelay': 86400,
             'PublicKey': '023693F15967AE357D0327974AD46FE3C127113B1110D6044FD41E723689F81CC6',
             'DestinationTag': 20170428

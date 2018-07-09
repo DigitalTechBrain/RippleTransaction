@@ -16,8 +16,8 @@ namespace RippleTransaction
     {
         public JObject InvokeMethod()
         {
-            // HttpWebRequest webRequest = (HttpWebRequest)WebRequest.Create("https://s.altnet.rippletest.net:51234");
-            HttpWebRequest webRequest = (HttpWebRequest)WebRequest.Create("http://s1.ripple.com:51234/");
+            HttpWebRequest webRequest = (HttpWebRequest)WebRequest.Create("https://s.altnet.rippletest.net:51234");
+           // HttpWebRequest webRequest = (HttpWebRequest)WebRequest.Create("http://s1.ripple.com:51234/");
 
             webRequest.ContentType = "application/json";
             webRequest.Method = "POST";
@@ -28,8 +28,8 @@ namespace RippleTransaction
 
              'method': 'channel_verify',
         'params': [{
-        'channel_id': '6E4BC9B9A4B37054EE577AC84837402AE9DA40D5559A84AF3A609FAB22E98B93',
-        'signature': '304402207C3BB0856EEE58122FA19BC3673904DB6A69EC488B6132A0526D1A1FD34D9A2E022015F5781F7DAAD5F7A158E107F8B6147F22782FF70F68186AC412F2DEA260A4A1',
+        'channel_id': '351C0E602430D6E8499017C10338EE9ED998D2F26B49D422F305AA060747C1C9',
+        'signature': '30450221008BFA28FBCA4B7D93E185277763AD0ED9659F2EE8820F5EFF330EE8BB0B07489F0220276FD5599780055C89C890234219513725EE3FA79DACCCD9C3AA6FCC97D30FD4',
         'public_key': 'aB44YfzW24VDEJQ2UuLPV2PvqcPCSoLnL7y5M1EzhdW4LnK5xMS3',
         'amount': '10000000'
     }]
